@@ -1,11 +1,11 @@
-.react-git-card{
+.react-git-card {
   width: 300px;
   border-radius: 5px;
   font-size: 18px;
   color: #fff;
   background: #394264;
   overflow: hidden;
-  .react-gitcard-avatar{
+  .react-git-card-avatar {
     display: block;
     width: 150px;
     height: 150px;
@@ -13,22 +13,22 @@
     border: 5px solid #50597b;
     margin: 40px auto 30px;
   }
-  .react-git-card-name{
+  .react-git-card-name {
     text-align: center;
     font-size: 24px;
     margin: 0;
     font-weight: bolder;
   }
-  .react-git-card-desc{
+  .react-git-card-desc {
     margin: 20px 0 30px;
     font-size: 16px;
     color: #9099b7;
     text-align: center;
   }
-  .react-git-card-social{
+  .react-git-card-social {
     overflow: hidden;
     background: #50597b;
-    .react-git-card-icon{
+    .react-git-card-item {
       float: left;
       height: 60px;
       width: 33%;
@@ -36,28 +36,28 @@
       line-height: 60px;
       margin-right: 1px;
       background: #394264;
-      .react-git-card-icon{
+      .react-git-card-icon {
         margin-right: 8px;
       }
       &.followers {
         box-shadow: inset 0 5px 0 #cc324b;
       }
-      &.repos{
+      &.repos {
         box-shadow: inset 0 5px 0 #11a8ab;
       }
-      &.following{
+      &.following {
         box-shadow: inset 0 5px 0 #fcb150;
       }
-      &.hover{
+      &:hover {
         background: #50597b;
       }
-      &:last-child{
+      &:last-child {
         margin-right: 0;
       }
     }
   }
-  a{
-    color:#fff;
+  a {
+    color: #fff;
     text-decoration: none;
   }
 }

@@ -1,5 +1,7 @@
 import React from "react";
 import Git from "./Git";
+import Icon from "./Icon";
+
 
 export default class Layout extends React.Component {
   static propTypes = {
@@ -18,10 +20,12 @@ export default class Layout extends React.Component {
   }
   changeName(name){
     this.setState({name});
+  }
+  changeState(name){
     this._fetchUserInfo(name);
   }
   componentDidMount() {
-    this._fetchUserInfo(this.props.name)
+    this._fetchUserInfo(this.props.name);
   }
 
   _fetchUserInfo(name) {
@@ -45,7 +49,8 @@ export default class Layout extends React.Component {
     return (
       <div>
         <Git
-        changeName={this.changeName.bind(this)}
+        changeName = {this.changeName.bind(this)}
+        changeState = {this.changeState.bind(this)}
         name = {this.state.name}
         data = {this.state.data}/>
       </div>
